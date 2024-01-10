@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*essa propriedade da um espaço entre os textos ou imagens*/
+}
+
+body >header {
+    background-color: #2f3640;
+    padding: 16px o;
+    color: #f5f6fa;
+}  
+/* aqui precisamos colocar o body, para não afetar os headers que constituem o time das fotos. Como quero mencionar o header do pai body, precisa colocar o > */
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+        width: 1366px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article article img {
+  /*  height: 180px; */
+    width: 100%;
+}
+
+.article article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2, 
+.article article {
+    margin-bottom: 16px;
+}
+
+.article article h3 {
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+.article article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; /*para tirar o underline do "ler mais", que vem como padrão*/
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.article article a:hover {
+    text-decoration: underline; /*quando passar o mouse no "ler mais", terá o efeito de underline*/
+}
+
+.article article p,
+.article article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+   
+}
+
+#sports {
+    background-color: rgba(0,255,0,0.1)
+}
+
+#sports .article article a {
+    background-color: rgba(0,255,0,0.8);
+    
+}
+
+#economy {
+    background-color: #affa65;
+}
+
+#economy .article article a {
+    background-color: #ff9f1a;
+}
+
+#entertainment {
+    background-color: #e4c3da;
+}
+
+#entertainment .article article a {
+    background-color: #81bbe0;
+}
+
+#tecnology {
+    background-color: #fcbfab;
+}
+
+#tecnology .article article a {
+    background-color: #5c6e91f6;
+}
+
